@@ -1,0 +1,38 @@
+program_name: "Sample Podcast"
+output_dir: "outputs"
+whisper:
+  command: "whisper"
+  language: "Japanese"
+  model: "small"
+  output_format: "txt"
+  extra_args: []
+openai:
+  model: "gpt-4.1-mini"
+  temperature: 0.4
+prompts:
+  system: "prompts/description_system.md"
+  user: "prompts/description_user.md"
+description:
+  platform: "Spotify"
+  intro_heading: "▼番組紹介"
+  links_heading: "▼リンク"
+  topics_heading: "▼今回のトピック"
+  intro_text: |
+    友人同士で日常の出来事、気になった作品、最近考えたことを話すPodcastです。
+    会話の温度感を残しつつ、初めて聴く人にも伝わる概要欄を作成します。
+  topic_separator: " / "
+  topic_min: 5
+  topic_max: 15
+  topic_warn_length: 45
+  topic_error_length: 70
+  topic_line_warning_length: 220
+  exclude_topic_markers:
+    - "お便りテーマ"
+    - "おたよりテーマ"
+    - "メールテーマ"
+    - "募集テーマ"
+links:
+  - label: "Message Form"
+    url: "https://example.com/message"
+  - label: "Official Links"
+    url: "https://example.com/links"

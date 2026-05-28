@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+outputs/
+config.yaml
+poddesc-run
+.env
+.env.local
+.DS_Store

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT_DIR="${PROJECT_DIR:-$(cd "$(dirname "$0")/.." && pwd)}"
+CONFIG_PATH="${PODDESC_CONFIG:-$PROJECT_DIR/config.yaml}"
+
+if [ -f "$PROJECT_DIR/.env" ]; then
+  set -a
+  source "$PROJECT_DIR/.env"
+  set +a
+fi
+
+exec "$PROJECT_DIR/.venv/bin/gaiyo-san" "$@" --config "$CONFIG_PATH"

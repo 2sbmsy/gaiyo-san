@@ -4,7 +4,7 @@ __pycache__/
 *.egg-info/
 outputs/
 config.yaml
-poddesc-run
+gaiyo-san-run
 .env
 .env.local
 .DS_Store

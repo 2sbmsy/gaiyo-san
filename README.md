@@ -101,7 +101,7 @@ macOSでは、`pbcopy` が利用できる場合に生成後の概要欄をクリ
 gaiyo-san from-transcript /path/to/transcript.txt --no-copy --config config.yaml
 ```
 
-`.venv`、`.env`、`config.yaml` をまとめて扱いたい場合のサンプルラッパーとして、`scripts/poddesc-run.example` を用意しています。
+`.venv`、`.env`、`config.yaml` をまとめて扱いたい場合のサンプルラッパーとして、`scripts/gaiyo-san-run.example` を用意しています。
 
 ## GUIの使い方
 
@@ -155,7 +155,7 @@ pytest
 - `.env`
 - `.env.local`
 - `config.yaml`
-- `poddesc-run`
+- `gaiyo-san-run`
 
 実際のPodcastリンク、非公開フォームURL、未公開の文字起こし、APIキーは、Git管理外のローカルファイルで扱ってください。
 
